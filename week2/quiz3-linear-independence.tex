@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath} % for 'bmatrix' environmen
+\usepackage{commath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[document]{ragged2e}
+\begin{document}
+    \section*{Question 1}
+    \begin{flushleft}
+        In the lecture videos you saw that vectors are linearly dependent if it is possible
+        to write one vector as a linear combination of the others. For example, the vectors
+        a, b and c are linearly dependent if a =  $q_1b + q_2c$ where $q_1$ and $q_2$ are scalars. \\
+    \end{flushleft}
+    \begin{flushleft}
+        Are the following vectors linearly dependent? \\
+        $
+            a =
+            \begin{bmatrix}
+                1 \\ 1
+            \end{bmatrix}
+            \text{ and } b = 
+            \begin{bmatrix}
+                2 \\ 2
+            \end{bmatrix}
+        $
+    \end{flushleft}
+    \subsection*{Answer}
+    \begin{flushleft}
+        Yes. Vectors are linearly independent if
+        $
+            b_3 \neq a_1b_1 + a_2b_2
+        $ \\
+        In other words, if some scalar exists to make the vectors equivalent, they are not linearly independent. \\
+        In our case:
+        $
+            a = \frac{1}{2}b
+        $
+         which means the vectors are linearly dependent and NOT linearly independent.
+    \end{flushleft}
+    \section*{Question 2}
+    \begin{flushleft}
+        Are the following vectors linearly independent? \\
+        $
+            a = 
+            \begin{bmatrix}
+                1 \\ 0 \\ 1
+            \end{bmatrix}
+            b = 
+            \begin{bmatrix}
+                2 \\ - 1 \\ 1
+            \end{bmatrix}
+            c = 
+            \begin{bmatrix}
+                -3 \\ 1 \\ -2
+            \end{bmatrix}
+        $
+    \end{flushleft}
+    \subsection*{Answer}
+    \begin{flushleft}
+        No. $ a = -b - c $ which makes these vectors linearly dependent.
+    \end{flushleft}
+\end{document}
