@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath} % for 'bmatrix' environmen
+\usepackage{commath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[document]{ragged2e}
+\begin{document}
+    \section*{Question 1}
+    \begin{flushleft}
+        A ship travels with velocity given by
+        $
+            \begin{bmatrix}
+                1 \\ 2
+            \end{bmatrix}
+        $
+        , with current flowing in the direction given by 
+        $
+            \begin{bmatrix}
+                1 \\ 1 
+            \end{bmatrix}
+        $
+        with respect to some co-ordinate axes.
+        \begin{flushleft}
+            What is the velocity of the ship in the direction of the current?
+        \end{flushleft}
+    \end{flushleft}
+    \subsection*{Answer}
+    \begin{flushleft}
+        $
+            \text{vector projection} = r \frac{r \cdot s}{\abs{r}^2}
+            = 2
+        $ \\
+        $
+            \text{vector projection} = 
+            \begin{bmatrix}
+                1 \\ 1
+            \end{bmatrix}
+            *
+            \frac{3}{2}
+        $ \\
+        $
+            \boxed{
+                \text{vector projection} =
+                \begin{bmatrix}
+                    3/2 \\ 3/2
+                \end{bmatrix}
+            }
+        $
+    \end{flushleft}
+
+    \section*{Question 2}
+    \begin{flushleft}
+        A ball travels with velocity given by
+        $
+            \begin{bmatrix}
+                2 \\ 1
+            \end{bmatrix}
+        $
+        , with wind blowing in the direction given by
+        $
+            \begin{bmatrix}
+                3 \\ -4
+            \end{bmatrix}
+        $
+        with respect to some co-ordinate axes.
+    \end{flushleft}
+    \begin{flushleft}
+        What is the size of the velocity of the ball in the direction of the wind?
+    \end{flushleft}
+
+    \subsection*{Answer}
+    \begin{flushleft}
+        This is a scalar projection problem because we are looking for size.
+    \end{flushleft}
+    \begin{flushleft}
+        $
+            \text{scalar projection} = \frac{r \cdot s}{\abs{r}}
+        $ \\
+        $
+            \boxed{\text{scalar projection} = \frac{2}{5}}
+        $
+    \end{flushleft}
+
+    \section*{Question 5}
+    \begin{flushleft}
+        At 12:00 pm, a spaceship is at position
+        $
+            \begin{bmatrix}
+                3 \\ 2 \\ 4
+            \end{bmatrix}
+            km
+        $
+        away from the origin with respect to some 3 dimensional co ordinate system. The ship is travelling with velocity
+        $
+            \begin{bmatrix}
+                -1 \\ 2 \\ -3
+            \end{bmatrix}
+            km/h.
+        $
+        What is the location of the spaceship after 2 hours have passed?
+    \end{flushleft}
+    \subsection*{Answer}
+    \begin{flushleft}
+        This problem is a simple vector addition problem. We know the speed of the spaceship. First, what we will do
+        is multiply the speed in km/h by 2 to figure out the distance it will travel in 2 hours. \\
+        $
+            2
+            \begin{bmatrix}
+                -1 \\ 2 \\ -3
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                -2 \\ 4 \\ -6
+            \end{bmatrix}
+            km/2h
+        $
+    \end{flushleft}
+    \begin{flushleft}
+        Now we can simply add the starting position + the distance in 2 hours the ship will travel. \\
+        $
+            \begin{bmatrix}
+                3 \\ 2 \\ 4
+            \end{bmatrix}
+            +
+            \begin{bmatrix}
+                -2 \\ 4 \\ -6
+            \end{bmatrix}
+            =
+            \boxed{
+                \begin{bmatrix}
+                    1 \\ 6 \\ -2
+                \end{bmatrix}
+                km
+            }
+        $
+    \end{flushleft}
+\end{document}
